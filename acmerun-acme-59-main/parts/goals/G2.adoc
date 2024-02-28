@@ -1,0 +1,9 @@
+[#g2,reftext=G.2]
+=== (G.2) Current situation
+
+ifdef::env-draft[]
+TIP: _Current state of processes to be addressed by the project and the resulting system. It describes the current situation, upon which the system is expected to improve_  <<BM22>>
+endif::[]
+
+
+McMaster and its surrounding areas are home to numerous trails (a corridor between the bayfront on the lake and the Dundas Valley Conservation Area). These trails serve purpose to runners and people looking to stay healthy. People within the McMaster region also have the option to go to several gyms in the surrounding region. However these gyms do not provide personalized workout plans without paying a premium price.

@@ -1,0 +1,7 @@
+Sarim Zia < zias11@mcmaster.ca>; Hamzah Rawasia <rawash1@mcmaster.ca>; Justin Guo <guo59@mcmaster.ca>
+:project-title: ACME Run
+:course-number: SE/CS 3RA3
+:course-term: Fall
+:revnumber: 3
+:milestone: 3
+:env-draft:

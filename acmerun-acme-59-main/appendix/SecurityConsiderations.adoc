@@ -1,0 +1,32 @@
+[#SecurityConsiderations,reftext=SecurityConsiderations]
+=== (A.1) Security Considerations
+
+=== (A.1.1) Security by Obscurity Assessment
+
+Based on our plans for developing the system, Security by Obscurity Assessment 
+would not make sense. Our development relies on reoccuring testing and security validation, but
+obscurity on our system would reduce transparency making it harder for thorough testing. It 
+also presents a difficulty in maintenance as keeping obscured elements up to date will become 
+tedious as the system is upgraded, and can become error-prone. All in all, it is a weak security 
+option that would provide minimal protection while creating alot of problems for development. The
+services through AWS will provide many encrpytion and security options that would be much more 
+beneficial.
+
+As mentioned above, the a system implementing security by obscurity could be violated in numerous places. 
+The foremost would be through the development phase as numerous teams will work together to develop the system.
+A lack of transparency in the code structure will present challenges for cross team development and could lead to violations 
+as the code structure would not be clear. During phases of code updates and evolution, maintaining obscurity could be violated 
+and lead to disrepencies between the initial development cycle and the new development cycle.
+
+=== (A.1.2) Security Property Assessment
+
+*Confidentiality* can be achieved through seperating user data a high extent so that it is isolated. User data from their workouts 
+should be stored on their local device, and only authorized requests would be granted access to the data. Data access can be limited
+to specific fields of data based on the request. An example of this is the global leaderboard that can request for the users fastest
+workout time, but would not be able to request other fields such as the users current location. This information isolation will adequate 
+protection to ensure confidentiality so that data is not stored in one central space where any leaks would case major data breaches.
+
+*Availability* can be achieved through ensuring that our services are reliable. We will specify time restrictions on requests such as
+a users HRM connectivity within one minute of the request, before the request is timed out and the user is notified. We will ensure an on-call
+support team that is able to help users with service related isuses to ensure resources and data are usable. Our security focus towards preventing 
+Denial of Service Attacks will also help ensure a reliable application.

@@ -1,0 +1,27 @@
+[#e1,reftext=E.1]
+=== (E.1) Glossary
+
+ifdef::env-draft[]
+TIP: _Clear and precise definitions of all the vocabulary specific to the application domain, including technical terms, words from ordinary language used in a special meaning, and acronyms. It introduces the terminology of the project; not just of the environment in the strict sense, but of all its parts._  <<BM22>>
+endif::[]
+
+
+[[events,Events]] Events::
+    Events are special time periods during the year that give users challenges and prizes they would otherwise not be able to recieve during normal playtime.
+
+[[macrun,MacRun]] MacRun::
+    The pilot app for running near or around McMaster University. 
+
+[[shelters,Shelters]] Shelters::
+    Safe zones are available on the trials that the users run on, allowing them to be able to rest in these areas without having to worry about challenges the game might give the player.
+
+[[escaping,Escaping]] Escaping::
+    Escaping the attacker in the running game, where the user must run faster than normal for a certain period of time determined by previous data from the user. 
+
+[[fightingback,Fighting Back]] Fighting Back::
+    The player can fight back against the enemies within the game by letting the user complete certain exercises beside running.
+
+==== (E.1.2) Domain Model
+
+.Domain Model for ACME Run
+image::models/domain_model.svg[scale=70%,align="center"]

@@ -1,0 +1,24 @@
+@startuml
+
+!include ../_style/puml.style
+  
+interface CollectedHeathData {
+    + list(token: Authentication): HealthData 
+}
+
+CollectedHeathData .> HealthData
+
+class HealthData {
+    + Total Time Excercised: Time
+    + Time rested: Time
+    + Resting Heart Rate: BPM
+    + body-weighty excercises Completed: Amount
+
+}
+
+CollectedHeathData  --> Authentication 
+
+class Authentication <<Security>>
+
+
+@enduml

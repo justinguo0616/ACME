@@ -1,0 +1,12 @@
+[#g6,reftext=G.6]
+=== (G.6) Limitations and Exclusions
+
+ifdef::env-draft[]
+TIP: _Aspects that the system need not address. It states what the system will not do. This chapter addresses a key quality attribute of good requirements: the requirements must be delimited (or “scoped”). <<g6>> is not, however, the place for an analysis of risks and obstacles, which pertain to the project rather than the goals and correspondingly appears in chapter <<p6>>._  <<BM22>>
+endif::[]
+
+Below is a list of limitations that the system will not do:
+
+* System will not check if players will do activites to completion, as there is no reliable method to determine completion.
+* System will not integrate with social media to do advertising or allow cross-posting. 
+* System will not reliably track progress in trails that are not in the system, as it is not reliable to determine distance and safety in areas that have not been checked by authorities beforehand. 

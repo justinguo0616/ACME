@@ -1,0 +1,22 @@
+[#g4,reftext=G.4]
+=== (G.4) Functionality overview
+
+ifdef::env-draft[]
+TIP: _Overview of the functions (behavior) of the system. Principal properties only (details are in the System book). It is a short overview of the functions of the future system, a kind of capsule version of book S, skipping details but enabling readers to get a quick grasp of what the system will do._  <<BM22>>
+endif::[]
+
+The high level functional requirements for the application based on client input can be defined as follows in no particular order:
+
+- *Customized training plans.* Client wants the ability to receive custom training plans that adapt to users habits, and decisions, rather than following standard "one size fits all" training plans that are catered to a generic person. This can be done primarily by remembering player decisions, and adapting the training plan based on those decisions to optimize the users fitness experience.
+- *Interactive playful environment.* Client wants the app to be interactive and playful to create a fun workout experience. This can be done by offering mini-games within the workout, alongside badges to make each workout feel meaningful and rewarded.
+- *Consistent user activity.* Client hopes to ensure that players stay active all year round, idealy over 80% of months during the year, including traditionally quiet periods. This can be done by creating seasonal challenges and making frequent updates within the app.
+- *Updated geogrophical data.* Ensuring frequent updates are made to ensure player safety, and to capture any changes within shelter locations, and trail data. Working with locally operating partners such as the cities municipal government will allow for expert data for the region.
+- *HRM compatibility.* The client hopes to make the app HRM compatible so that collected heart rate information can be used to to adapt the workout to the physical response of the player. Heart Rate focused mini games that are trained on heart rate data will create a extended app experience for anyone who wishes to connect their HRM.
+
+Of these functional requirements, 2 that are of critical importance is customized training plans, and interactive playful environment. Customized training plans is critical to provide the user with an experience that is a luxury at gyms. For the average person this app provides them an experience they would have to pay a premium fee for, for free. Interactive playful environment is another critical requirement which differentiates this app from any other fitness app. It allows the user to enjoy their workout and interact with the app rather than just following on-screen instructions. The badges for achievements ensure the user is rewarded for their hard work.
+Some high level non-functional requirements for the application can be defined as follows in no particular order:
+
+- *Compliance with privacy regulations.*
+- *Compliance with market regulations and standards.*
+
+These two non-functional requirements are critical for legal and standatory reason. As the app relies on data collection and usage, it must comply with privacy regulations that are enforced by the acting government. As the app will be listed on several online markets such as the playstore and app store, it must comply with regulations and standards set by the respective markets.

@@ -1,0 +1,44 @@
+[#g5,reftext=G.5]
+=== (G.5) High-level usage scenarios
+
+ifdef::env-draft[]
+TIP: _Fundamental usage paths through the system. It presents the main scenarios (use cases) that the system should cover. The scenarios chosen for appearing here, in the Goals book, should only be the **main usage patterns**, without details such as special and erroneous cases; they should be stated in user terms only, independently of the system's structure. Detailed usage scenarios, taking into account system details and special cases, will appear in the System book (<<s4>>)._  <<BM22>>
+endif::[]
+
+.High Level use case diagram
+image::models/use_case_diagram.png[scale=70%,align="center"]
+
+* [[uc1,UC1]] *UC1: Connect Heart Rate Monitor.* 
+    1. User (Student/faculty at McMaster, citizen, or trainer) starts the app on their phone
+    2. User opens the settings section
+    3. User grants necessary permissions for the app to utilize the data
+    4. User follows the app's prompts to initiate the pairing process 
+    5. User performs actions to calibrate the heart rate monitor
+
+* [[uc2,UC2]] *UC2: Access User Profile.* 
+    1. User starts the app and navigates to profile section
+    2. App displays overview of user's profile, such as their current fitness goals/preferences
+    3. User is able to customize their fitness goals and edit personal information
+    4. User can view their badges they have won from global challenges
+    5. User is able to share their profile overview with others
+
+* [[uc3,UC3]] *UC3: App customizes workout.* 
+    1. App analyzes the user's profile
+    2. App offers several options to the user based on their profile
+    3. User is able to choose from the options provided by the app
+    4. App will configure the challenge based on the user's selection
+    5. App will continue to adapt the workout based on user's decisions
+
+* [[uc4,UC4]] *UC4: Release global challenge event results.* 
+    1. App notifies ACME RUN team that an event time has expired
+    2. ACME RUN team opens the portal system to access event statistics
+    3. Team compiles a leaderboard ranking for user's based on their fitness progress during the event
+    4. App will distribute badges to users if they meet the requirements
+    5. App will notify users that results are available to view in the app
+
+* [[uc5,UC5]] *UC5: Determine and update which trails are safe for users.* 
+    1. Local authorities inspect and analyze local areas to determine safety
+    2. Local authorties gather findings into a report which details each area's safety
+    3. Local authorities provide their findings to the ACME RUN team to notify them of safe areas
+    4. ACME RUN team will integrate support for the safe areas into the app, and block off other areas
+    5. Local authorities will periodically inspect areas and provide updates to which areas are safe

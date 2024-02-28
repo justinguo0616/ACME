@@ -1,0 +1,17 @@
+[#p6,reftext=P.6]
+=== (P.6) Risk and mitigation analysis
+
+ifdef::env-draft[]
+TIP: _Potential obstacles to meeting the schedule of <<p4>>, and measures for adapting the plan if they do arise. It is essential to be on the lookout for events that could derail the project, and devise mitigation strategies. It can include a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) for the project._  <<BM22>>
+endif::[]
+
+Risks:
+*Difficulties convincing local authorities to support us* One major aspect for the success of this project is the support of the local Hamilton authorities to ensure we are able to provide users with updated geogrophical data. The local authorities goal is to support its citizens, which includes local businesses. Providing support to an app that potentially takes business away from local gyms within the McMaster region would not benefit the city and would therefore be an idea that could go rejected when presented. A mitigation strategy to avoid such a risk would be to present and market the app to target users who cannot afford the luxuries of personalized training programs rather than users who already go to an existing gym. The app can also be marketed as a way to promote a healthy and active lifestyle so that people who may not be as active before see this as an opportunity to start exercising.
+
+*Inaccuracy with customized training plans* One of the main selling points of the app is the ability to give the user a customized training plan based on user data. However the ability to automate the creating of the training plans with limited data coud provide inaccruacy with training plans. This could result in users not being able to progress in their fitness journey. To mitigate this risk, we can invest more resources in the development of the automation of the training plans, alongside working with domain experts who are well versed with fitness.
+
+Threats:
+
+*Integration Vulnerabilities.* Since the app will rely on the integration of other softwares and technologies such as maps and heart rate monitors, there may be security vulnerabilities introduced into our app if these external components contain vulnerabilities. To mitigate this threat, it is important that we thoroughly read all documentation and conduct assessments of all external components before beginning to implement them into our app. Additionally, we may be able to contact these providers and work with them directly to ensure that the implementations into our app adhere to best practices.
+
+*Social Engineering Attacks.* One of the fun features of the app is being able to earn badges and progress for workouts and events, and there is the possibility for social engineering tactics to convince people to provide personal information such as their physical profile and location in the hope of being given rewards in return. This can be very dangerous as the security and privacy of user information is a high priority. To mitigate this, we must do our due diligence to educate employees and users of this potential threat and to remind them that they should never provide any information in this context. This can be done by including message reminders in the app when users create a profile, and when events begin.

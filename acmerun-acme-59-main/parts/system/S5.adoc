@@ -1,0 +1,68 @@
+[#s5,reftext=S.5]
+=== (S.5) Prioritization
+
+ifdef::env-draft[]
+TIP: _Classification of the behaviors, interfaces and scenarios (<<s2>>, <<s3>> and <<s4>>) by their degree of criticality. It is useful in particular if during the course of the project various pressures force the team to drop certain functions._  <<BM22>>
+endif::[]
+
+=== Priority Table for User Profiles Manager 
+|===
+
+|Requirement ID | Requirement name | Priority Level (MoSCoW) | Reasoning 
+
+| <<F211>> | Create profile service | Must Have | It is important that users are able to create their own account for the a for a personalized experience, as it is part of the main functionality of the app.
+| <<F212>> | Switch profile service | Will not have | Needing multiple profiles on the same device is not necessary for most users.
+| <<F213>> | Check badges and progress | Could have | Being able to track progress and accomplishments is important for users, but does not take priority over the main functionality of workouts and creating profiles.
+| <<F214>> | Update profile preference | Could have | Users are likely to switch up their workout routine, so being able to update preferences is good to have but is not essential from the start.
+
+|===
+
+=== Priority Table for Location Service
+|===
+
+|Requirement ID | Requirement name | Priority Level (MoSCoW) | Reasoning 
+
+| <<F221>> | Updated trail information | Must have | Important for the functionality of workouts for users to be able to see trail information. 
+| <<F222>> | Distance tracking | Could have | Nice to have feature, but does not impact the actual logic or implementation of workout functionality.
+| <<F223>> | View nearby locations | Should have | Important for users to be able to see which areas are available and safe to use for workouts.
+| <<F224>> | Assist with navigation | Must have | Very important for the safety of users to ensure they are aware while travelling through areas.
+
+|===
+
+=== Priority Table for Global Challenge Event Manager 
+|===
+
+|Requirement ID | Requirement name | Priority Level (MoSCoW) | Reasoning 
+
+| <<F231>> | Provide event information | Could have | Useful to notify users of when events will be hapening so they are aware and able to plan for the event, but not necessary for initial functionality of the app
+| <<F232>> | Track user progress | Will not have | Nice to be able to view progress during the event but will not impact functionality.
+| <<F233>> | Display user's results | Will not have | Users can view final results to reflect on progress, but does not hinder ability to participate in workouts.
+| <<F234>> | Badge Distributer | Will not have | Users could have something to show for their efforts and participation in events, but not a priority.
+
+|===
+
+=== Priority Table for Game Logic System
+|===
+
+|Requirement ID | Requirement name | Priority Level (MoSCoW) | Reasoning 
+
+| <<F211>> | Provide workout options | Must have | Critical for users to be able to have control over the type of workout they want.
+| <<F212>> | Virtual enemies | Should have | Important for the intended functionality and logic of workouts. 
+| <<F213>> | Complete user's choice | Must have | Critical feature of the app.
+| <<F214>> | Decision memory | Could have | Personalized workouts that carry through to future workouts helps with the effectiveness of workouts, but is not needed initially.
+
+|===
+
+=== Priority Table for Non-Functional Requirements
+|===
+
+|Requirement ID | Requirement name | Priority Level (MoSCoW) | Reasoning 
+
+| <<NF1>> | Data encryption | Must have | Critical to ensure the privacy and safety of users information.
+| <<NF2>> | Accesibility | Should have | Important to provide everyone with a fair opportunity to use app with ease.
+
+|===
+
+Security concerns were taken into strong consideration when determining the priority of requirements. The app involves users creating a personal profile and creating a password, along with personal information such as their name, age, height, weight, and other health information. This can be considered sensitive and personal for users, and it is very important that the privacy and safety of this information is at the top of the priority list to ensure that people cannot gain unauthorized access to the information of other users, and this must be refleced at the implementation level of the app's features.
+
+The prioritization of requirements focused on how important a requirement was for the main functionality and benefits of the app, as well as the safety and security of users. The main functionality of the app refers to requirements which directly influence how users will interact with the app on a daily basis, which involves the main features such as completing a workout, participating in events, and having a personalized experience. So, features that have a large part in optimizing the users experience in these aspects such as providing event information and workout options, and a personal profile were deemed to be must have requirements. Other requirements which provided additional benefits that would greatly improve the users experience while using the app were deemed to be requirements we should have. And other requirements that also provided some aspects that were nice to have for ease of use but were not essential for the functionality and goal of the app were deemed as could have or will not have.  

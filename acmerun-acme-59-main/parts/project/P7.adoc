@@ -1,0 +1,27 @@
+[#p7,reftext=P.7]
+=== (P.7) Requirements process and report
+
+ifdef::env-draft[]
+TIP: _Initially, description of what the requirements process will be; later, report on its steps. It starts out as a plan for conducting the requirements elicitation process, but is meant to be updated as part of that process so that it includes the key lessons of elicitation._  <<BM22>>
+endif::[]
+
+* Students and Faculty at McMaster University (Dennis):
+** Type of interview: Closed. We want to get a good idea of what those on campus are looking for in their fitness goals, and how MacRun can help with this.
+** Question: "What are the biggest obstacles you face when trying to incorporate physical activity into your life during the school year?". We are trying to appeal to students and faculty on campus, so understanding the challenges that they have when it comes to fitness will allow us to implement features in a way that appeals to them and makes fitness easier and more enjoyable.
+
+* Citizen of Hamilton (Scottie):
+** Type of Interview: Open. We want to find out as much as we can from Hamiltonians regarding their current fitness routine and goals.
+** Question: "Do you have currently have a fitness routine, and if so what is it?". This will be an opening question to develop an understanding of the citizens current situation, which will then help us progess towards finding out how they believe they can improve and integrate new ideas into their fitness routine.
+
+* Fitness Trainer (Jeff):
+** Type of Interview: Closed. We want to have a specific perspective from the trainer to find out what they and their client's look for when implementing new exercises into their routine.
+** Question: "What do you think is the key component of an activity or exercise that helps your clients stay motivated and focused in the long-term?". This question will be helpful in identifying what we can focus on when implementing the features to make the app more "fun" and addictive for users.
+
+* HammerCorp Inc. CEO (Gary):
+** Type of Interview: Closed. The goal of this interview is to ensure that we have a full understanding of the vision of this project in the eyes of the client.
+** Question: "What is your plan to ensure that users who do not have an HRM still feel as though they are benefiting from the features of the app?". This will allow us to better understand how the app will be able to cater to people with different needs and purposes.
+
+* IT Department Manager (Chris):
+** Type of interview: Open. We want to understand the mindset of the IT department and how they plan to approach the development process.
+** Question: "What do you anticipate will be the biggest challeneges you may face when implementing the features requested by the client?". This will help us understand and plan out the development process and estimate the allocated time for each feature, which can then lead us into more questions about the development process and key aspects that must be considered.
+

@@ -1,0 +1,12 @@
+[#e2,reftext=E.2]
+=== (E.2) Components
+
+ifdef::env-draft[]
+TIP: _List of elements of the environment that may affect or be affected by the system and project. It includes other systems to which the system must be interfaced. These components may include existing systems, particularly software systems, with which the system will interact — by using their APIs (program interfaces), or by providing APIs to them, or both. These are interfaces provided to the system from the outside world. They are distinct from both: interfaces provided by the system to the outside world (<<s3>>); and technology elements that the system's development will require (<<p5>>)._  <<BM22>>
+endif::[]
+
+The system interacts with two external components:
+
+- *Heart Rate Monitor Software:* The app utilizes heart rate monitor data to provide users that have a HRM the ability to integrate the data within the app. The HRM support is assumed to be universal regardless of the brand or type of HRM.
+- *Mapping Software* To provide geogrophical data, the app would rely on third party mapping. The ideal choice would be the Google Maps Platform API that allows for route tracking, distance calculation, and mapping. More specifically we will utilize Maps JavaScript API to embed our interactive map, and the directions API for the runner
+to see which way thet are travelling.

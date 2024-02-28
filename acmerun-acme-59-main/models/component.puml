@@ -1,0 +1,61 @@
+@startuml
+
+!include ../_style/puml.style
+skinparam ranksep  5
+skinparam nodesep 45
+
+' ***********************
+' * External Components *
+' ***********************
+
+component mapping       as "Mapping\nSoftware" <<external>>
+() "Provide\nGeographical\nData" as Igeo
+mapping -- Igeo
+
+component HRM     as "HRM\nSoftware" <<external>>
+() "Integrate\nData" as Iintegrate
+Iintegrate -- HRM
+
+
+' ***********************
+' * Internal Components *
+' ***********************
+
+component global    as "Global\nChallenge\nEvent\nManager"
+() "View"       as Iview
+global -- Iview
+
+
+component users as "User\nProfiles\nManager"
+() "Fitness Data"      as Ifitness
+Ifitness -- users
+() "Manage\nProfiles" as Iprofiles_mgmt
+Iprofiles_mgmt - users
+
+component logic as "Game\nLogic\nSystem"
+() "Begin\nWorkout" as Iworkout
+Iworkout - logic
+Iintegrate <.. logic
+
+component location    as "Location\nService"
+() "ProvideLocation"       as Iprovide_location
+Iprovide_location - location
+() "Find\nLocation" as Ifind
+Ifind -- location
+Igeo <.. location
+location .> Iworkout
+
+
+' **************
+' * mobile app *
+' **************
+
+component mobile as "Mobile-App"
+Iview <.. mobile
+mobile ..> Ifitness
+mobile .> Ifind
+
+actor "User" as P
+P .> mobile
+
+@enduml

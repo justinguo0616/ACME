@@ -1,0 +1,9 @@
+[#e3,reftext=E.3]
+=== (E.3) Constraints
+
+ifdef::env-draft[]
+TIP: _Obligations and limits imposed on the project and system by the environment. This chapter defines non-negotiable restrictions coming from the environment (business rules, physical laws, engineering decisions), which the development will have to take into account._  <<BM22>>
+endif::[]
+
+- *Device support:* The system must be compatible with several standard devices that are commonly owned by users. This includes Apple and Android devices such as phones and tablets.  
+- *Location support*: The system must work with internet, data, or gps services to accurately determine the location of the user.

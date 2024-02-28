@@ -1,0 +1,52 @@
+[#s6,reftext=S.6]
+=== (S.6) Verification and acceptance criteria
+
+ifdef::env-draft[]
+TIP: _Specification of the conditions under which an implementation will be deemed satisfactory. Here, "verification" as shorthand for what is more explicitly called "Verification & Validation" (V&V), covering several levels of testing — module testing, integration testing, system testing, user acceptance testing — as well as other techniques such as static analysis and, when applicable, program proving._  <<BM22>>
+endif::[]
+
+*Functional requirements:* 
+
+The valididation of the implementation will be done on a continous basis during development. To validate the implementation, the testing fill focus on testing whether the requirements aimed to achieve the specification have been met,
+alongside whether the implementation works and is bug free. To acheive this, a combination of unit testing and acceptance will be utilized. The goal through unit testing would be to maintain a minimum of 90% code coverage to make sure code components are thouroughly tested. The goal through acceptance testing would be to ensure a minimum of 95% pass-rate for tests ensuring it meets the system requirements to a high degree. The early parts of validating the acceptance testing will be supported by 
+domain experts in the fitness field and high fidelity evolutionary prototyping that will allow for continous aceeptance testing as the prototype is updated. We will also provide an oppurtunity for early beta testing to stakeholders and to select members of the fitness commmunity. Using these early
+beta testing trials, we will utilize user interviews with the trial participants to get feedback on the application that can be used to support changes to the prototype and spot bugs.
+
+*Non-Functional Requirements:*
+
+- *Data Privacy/Protection:* User data will be stored in secure databases through cloud systems such as AWS. On the code level we will utilize abstraction and encryption to minimize security threats. An audit will be done and further recommendations will be made by 3rd party cyber security companies.
+** Covered requirements: <<NF1>>
+
+- *Accessibility:* Compliance with accessibility standards identified in <<g7>> will be done on acontinous basis by an internal team member. A thorough audit will be conducted before the initial deployment of the app, and before every update sent to the production environment. Accesibility needs by the location service would be catered by the service provider, and would be a criteria in the location service selection.
+** Convered requirements: <<NF2>>
+
+*Tests For <S.4.3>: "User Begins Workout on the App"*
+
+- Test 1: Open app and let it load to see if it loads without any errors.
+
+- Test 2: Try clickig Begin Work Out to see if it works and is able to start a workout.
+
+- Test 3: Follow the apps direction to a designated safe zone, and see if the directions are right
+and whether the app is able to recognize that you're in a safe zone and keep enemies away from you.
+
+- Test 4: Follow along with your workout, and test out game logic by trying to attack enemies and see if they 
+can be eliminated.
+
+- Test 5: End workout and check whether correct workout statistics are displayed.
+
+*Traceability Matrix*
+[cols="2*"]
+|===
+| *Requirement* | *Test(s)* 
+| App starts successfully| Test 1 
+
+|Workout begins sucessfully| Test 2
+
+|Safe Zone mechanics work succesfully|Test 3
+
+|Game Logic works Succesfully|Test 4
+
+|Statistics displayed successfully|Test 5
+|===
+
+

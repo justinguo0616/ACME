@@ -1,0 +1,69 @@
+@startuml
+
+!include ../_style/puml.style
+  
+class Consumer {
+    + firstname: String
+    + lastname: String
+    + age: Integer
+    + height: Float
+    + weight: Float
+}
+
+class UserLoginInfo {
+    + username: String
+    - <<encrypted>> password: String
+}
+UserLoginInfo <--* Consumer
+
+class Profile {
+    + badge: String
+    + workouts: Integer 
+}
+Profile <-* Consumer
+
+
+abstract class Workout {
+    + type: String
+    + start: Date
+    + end: Date
+    + completed?: Boolean
+}
+
+class HeartRateMonitor {
+    + id: Integer
+    + heartRate: Float
+}
+
+HeartRateMonitor <--* Workout
+
+class GameLogic {
+    + gameID: Integer
+    + enemyCount: Integer
+    + playerHealth: Float
+}
+class GameOption {
+    + gameOption: String
+}
+GameLogic *--> "1..n" GameOption
+
+
+GameLogic <--* Workout
+
+enum LOCATION {
+    + <<External>> LONGITUDE
+    + <<External>> LATITUDE
+    + <<External>> DISTANCE
+    + <<Internal>> SAFE_AREA
+    + <<Internal>> ENEMY_DISTANCE
+}
+LOCATION <--* Workout
+
+
+
+Consumer *-> "*" Workout
+
+
+
+
+@enduml

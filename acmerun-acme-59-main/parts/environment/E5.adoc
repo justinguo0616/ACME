@@ -1,0 +1,12 @@
+[#e5,reftext=E.5]
+=== (E.5) Effects
+
+ifdef::env-draft[]
+TIP: _Elements and properties of the environment that the system will affect. It defines effects of the system's operations on properties of the environment. Where the previous two categories (<<e3>>, <<e4>>) defined influences of the environment on the system, effects are influences in the reverse direction._  <<BM22>>
+endif::[]
+
+
+Some of the possible effects for the application as are follows:
+
+* Increase in community happiness, health, and morale. This can be accomplished due to the app assisting community members in exercising and achieving their fitness goals.
+* Increase in community involvement and social events. This is possible as the app will allow users to run on similar trails leading to social interactions with people of similar goals. 

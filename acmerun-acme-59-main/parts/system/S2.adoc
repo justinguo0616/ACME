@@ -1,0 +1,55 @@
+[#s2,reftext=S.2]
+=== (S.2) Functionality
+
+ifdef::env-draft[]
+TIP: _**This is the bulk of the System book, describing elements of functionality (behaviors)**. This chapter corresponds to the traditional view of requirements as defining "**what the system does**”. It is organized as one section, S.2.n, for each of the components identified in <<s1>>, describing the corresponding behaviors (functional and non-functional properties)._  <<BM22>>
+endif::[]
+
+==== (S.2.1) User Profiles Manager
+===== Functional Requirements
+
+. [[F211]] **Create Profile Service**: The User profiles manager shall enable users to create their profiles, granting access to their fitness statistics and badges. (F211)
+
+. [[F212]] **Switch Profile Service**: User profiles manager shall allow users to seamlessly switch profiles within the app without interfering with progress made on any other profile. (F212)
+
+. [[F213]] **Check badges and progress**: User profiles manager shall allow users to check their profile at any time to view the badges they have earned and track their fitness achievements. (F213)
+
+. [[F214]] **Update profile preferences**:  User profiles manager will allow users to update their workout preferences and information to influence their personalized workouts. (F214)
+
+==== (S.2.2) Location Service
+===== Functional Requirements
+
+. [[F221]] **Updated Trail information**: Location service shall update the important information about trails for the game, such as shelter locations. (F221)
+
+. [[F222]] **Distance Tracking**: Location service shall provide real-time information on distance travelled and duration to ensure accuracy of stats during workouts. (F222)
+
+. [[F223]] **View nearby locations**: Location service shall allow users to view the nearby trails and areas that are available for use during their workout. (F223)
+
+. [[F224]] **Assist with navigation**: Location service shall provide users with navigation through trails and paths in safe zones during their workout. (F224)
+
+==== (S.2.3) Global Challenge Event Manager
+===== Functional Requirements
+
+. [[F231]] **Provide event information**: Global challenge event manager will provide users with details about current and upcoming events (F231)
+
+. [[F232]] **Track user progress**: Global challenge event manager will track the user's progress during the current global challenge. (F232)
+
+. [[F233]] **Display user's results**: Global challenge event shall manager provide an interface to display final stats for a global challenge. (F233)
+
+. [[F234]] **Badge Distributer**: Global challenge event manager shall reward users with badges based on their performance during a global challenge. (F234)
+
+==== (S.2.4) Game Logic System
+===== Functional Requirements
+
+. [[F241]] **Provide workout options**: Game logic system shall provide users with options during their workout based on their profile. (F241)
+
+. [[F242]] **Virtual Enemies**: Game logic system shall manage the behaviour of virtual enemies during a users workout. (F242)
+
+. [[F243]] **Complete user's choice**: Game logic system shall listen to the users choice during a workout and implement the required actions. (F243)
+
+. [[F244]] **Decision Memory**: Game logic system shall remember the users past decisions to adapt the game logic for future workouts. (F244)
+
+
+==== Non-Functional Requirements
+. [[NF1]] **Data encryption**: The app shall encrypt all user data and personal information to ensure confidentiality. (NF1)
+. [[NF2]] **Accessibility**: The app shall provide alternative options for choice selection when navigating through the app, as well as during a workout,  to ensure a fair experience for everyone. (NF2)

@@ -1,0 +1,75 @@
+[#g7,reftext=G.7]
+=== (G.7) Stakeholders and requirements sources
+
+ifdef::env-draft[]
+TIP: _Groups of people who can affect the project or be affected by it, and other places to consider for information about the project and system. It lists stakeholders and other requirements sources. It should define stakeholders as categories of people, not individuals, even if such individuals are known at the time of writing. The main goal of chapter <<g7>> is to avoid forgetting any category of people whose input is relevant to the project. It also lists documents and other information that the project, aside from soliciting input from stakeholders, can consult for requirements information._  <<BM22>>
+endif::[]
+
+.Stakeholders for ACME RUN
+[cols=".^1,2,1,1"]
+|===
+2+|Stakeholder | Persona | Category 
+
+.3+| Consumers | Students and faculty members at McMaster University | <<Dennis>> | Direct
+| Citizen of Hamilton | <<Scottie>> | Direct
+| Fitness Trainer | <<Jeff>> | Direct 
+| Client | HammerCorp Inc. CEO | <<Gary>> | Direct
+| ACME RUN Administrative Department | App Manager | <<Chris>> | Direct
+3+| Heart Rate Monitor Manufacturers | Indirect
+3+| Local Gyms | Indirect
+3+| Local Authorities | Indirect
+
+|===
+
+==== (G.7.1) Direct Stakeholders
+
+===== Consumers
+
+Consumers are the groups of people who will be able to use and benefit from the ACME RUN app, specifically MacRun as the consumers will have easy access to the supported areas, where they will be able to run through trails and complete challeneges (e.g., Halloweek). 
+Consumers can be split into three main groups of people, which are students and faculty members at McMaster University, and citizens of Hamilton who are into fitness or want to begin working out who are able to access McMaster's campus and surrounding areas, and fitness trainers with clients in the area.
+
+[#dennis,reftext=Dennis]
+Dennis (Student at McMaster University)::
+    Dennis is a first year engineering student, who lives on campus and is having a tough time adjusting to university life and workload. They do not have a lot of free time and find the gym to be intimidating and time consuming for a beginner. They enjoy doing tasks with other students to help make work more enjoyable.
+[#scottie,reftext=Scottie]
+Scottie (Citizen of Hamilton)::
+    Scottie lives just a few blocks away from the McMaster University campus, and works full time. He wants to stay fit and get into better shape, but find that gym memberships are expensive and is a big time commitment that makes it hard to stay consistent. They are looking for new ways to incorporate exercise into their life to help them achieve their fitness goals. 
+[#jeff,reftext=Jeff]
+Jeff (Fitness Trainer)::
+    Jeff has been a personal fitness trainer for several years and is based in Hamilton, with many of his clients being a part of the McMaster community or surrounding areas. Jeff is passionate about helping others achieve their fitness goals, and is always looking for new ways to make exercise engaging and make it easier for his clients to be successful under his guidance.
+
+===== Client
+
+The client is HammerCorp Inc., who are directly involved in the project as the app is their idea and they will have direct input and the final say on what is created. They do not participate in the actual development, however will be actively involved in meetings and design reviews to ensure standards are being met.
+
+[#gary,reftext=Gary]
+Gary (HammerCorp Inc. CEO)::
+    Cameron is the CEO of HammerCorp Inc. since earlier this year. The ACME RUN project was the main idea of his, and were promoted to help the product become a reality. He is known for being a very involved and passionate client, and will be there to support the project each step of the way.
+
+===== ACME Staff
+
+ACME is directly impacted by the new ACME RUN project, especially the IT Department, as they are the ones who will be creating the app from beginning to end, based on the client's vision.
+
+[#chris,reftext=Chris]
+Chris (App Manager)::
+    Chris is an experienced project manager who has been with ACME for several years, and has been given the responsibility as project lead for ACME RUN. With 15+ years of experience in project management, there is great belief that ACME RUN will be able to meet all the standards and manage events successfully and in a timely manner. Chris is known for leading by example, and likes to get involved in the project whenever possible. 
+
+
+==== (G.7.2) Indirect Stakeholders
+
+- **Heart Rate Monitor Manufacturers**: Since ACME RUN will support the connection of a HRM to the app, local HRM manufacturers and sellers will command more interest from those looking to elevate their workouts within the app
+
+- **Local Gyms**: Since ACME RUN is providing another workout and fitness option for those in the McMaster area, local gyms may be affected by the deployment of this app and how users implement it into their workout routine
+
+- **Local Authorities**: Local authorities are responsible for determining which trails ensure the safety of runners when using the app, which will have an influence on the experience and development of ACME RUN 
+
+
+==== (G.7.3) Requirements sources
+
+* **Heart Rate Monitor Integration Policy/Documentation:** In order for the app to be able to allow users to connect their compatible HRM, we will need the documentation and policies regarding the integration of certain brands, including how data is read and stored and how a connection is established.
+
+* **App Store Guidelines and Regulations:** Since the purpose of the project is to develop a mobile app, we need to ensure that it adheres to the regulations of the App Store so it can be deployed for users to download.
+** https://developer.apple.com/app-store/review/guidelines/
+
+* **Accessibility Guidelines & Regulations:** We will have to adhere to accessibility requirements set by different juristictions to ensure that it is accesible to people of different needs and requirements.
+** https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=23601&section=html 

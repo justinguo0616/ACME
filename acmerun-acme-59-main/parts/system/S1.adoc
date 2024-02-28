@@ -1,0 +1,16 @@
+[#s1,reftext=S.1]
+=== (S.1) Components
+
+ifdef::env-draft[]
+TIP: _Overall structure expressed by the list of major software and, if applicable, hardware parts._  <<BM22>>
+endif::[]
+
+The system relies on these four software components:
+
+* **`User Profiles Manager`**: The component which is responsible for storing and managing user profiles and fitness data, including providing the personalized workouts for the user. This helps support the user's interactions within the app.
+* **`Location Service`**: This component provides the required information about the local area, including trails, safe locations which can be accessed by users, and to help track distance. It is very important for the safety and experience of users.
+* **`Global Challenge Event Manager`**: The component in charge of displaying the global challenges that are available to users on the app. It provides the interface for viewing/tracking current progress, as well as releasing results.
+* **`Game Logic System`**: The component which is responsible for managing the features and logic on the game side, such as the virtual enemies, and the game options provided to the user. Essentially, this component is responsible for implementing the logic related to the game.
+
+.Components involved in ACME Run mobile app
+image::models/component.svg[scale=75%,align="center"]

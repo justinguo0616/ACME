@@ -1,0 +1,8 @@
+[#g1,reftext=G.1]
+=== (G.1) Context and Overall Objectives
+
+ifdef::env-draft[]
+TIP: _High-level view of the project: organizational context and reason for building a system. It explains why the project is needed, recalls the business context, and presents the general business objectives._  <<BM22>>
+endif::[]
+
+Gym memberships that provide the luxury of personalized workout plans are financially out of reach for normal people wanting to stay healthy. By investing in the deployment of a new game, HammerCorp Inc aims to create a mobile application allows people to access personalized workouts safely and playfully through virtual games. The games will be accessible during your workout allowing for interactive sessions. The application will target people wanting to stay healthy, with the pilot targeting the McMaster Campus and surrounding areas. The app is important as it provides an accessible and enjoyable means of staying fit for those who are in the targeted area.

@@ -1,0 +1,10 @@
+[#p2,reftext=P.2]
+=== (P.2) Imposed technical choices
+
+ifdef::env-draft[]
+TIP: _Any a priori choices binding the project to specific tools, hardware, languages or other technical parameters. Not all technical choices in projects derive from a pure technical analysis; some result from company policies. While some project members may dislike non-strictly-technical decisions, they are a fact of project life and must be documented, in particular for the benefit of one of the quality factors for requirements: "requirements must be justified"._  <<BM22>>
+endif::[]
+
+- *Back-End Language Choice:* The Google Map Platform API, and the suppporting API's provide their capabilities through JavaScript so the ideal choice for a back-end language for the project will be Node.JS which uses JavaScript.
+
+- *Cloud Service Provider:* Since the project begin at a low scale, AWS is the only cloud servive provider with a pay-per-usage model allowing to minimize server-side costs.

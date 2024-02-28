@@ -1,0 +1,34 @@
+[#s3,reftext=S.3]
+=== (S.3) Interfaces
+
+ifdef::env-draft[]
+TIP: _How the system makes the functionality of <<s2>> available to the rest of the world, particularly user interfaces and program interfaces (APIs). It specifies how that functionality will be made available to the rest of the world, including people (users) and other systems. These are interfaces provided by the system to the outside; the other way around, interfaces from other systems, which the system may use, are specified in <<e2>>._  <<BM22>>
+endif::[]
+
+==== (S.3.1) APIs
+The ACME Run System only offers one API to the external world: 'HealthData'. This API can be used to integrate the health data collected by the system to display it within the health app on mobile devices.
+
+.External API presented by {project-title}
+image::models/external_API.svg[scale=70%,align="center"]
+
+- The API allows for the single operation of listing the collected health data
+- The system receives the single argument of an authentication token granting access to the system to collect the information
+- The system answers with all the health data that was collected if the aunthentication token is accepted
+
+==== (S.3.2) Wireframe Mockups
+These wireframe models will focus on the actual in workout experience as one starts their workout and how all the information for their current workout will be displayed on their mobile screen.
+
+===== (S.3.2.1) Beginning a workout (McMaster Student)
+
+The iniital screen focuses on the information displayed on the screen for, (<<Dennis>>). It features the map of the current workout route, alongside sheltering zones for Dennis to rest. As Dennis runs, he will be chased by virtual enemies that can only be deated by the listed excercises shown on the screen.
+
+.McMaster Student: Work Out Screen
+image::mockups/mockup-beginworkout.png[align="center"]
+
+
+===== (S.3.2.2) End of Work Out Summary Page (McMaster Student)
+
+Once the workout is finished, (<<Dennis>>) sees a summary of his workout in a comprehensive manner. If requested by the health app, this is part of the information sent over to the health app.
+
+.McMaster Student: End Work Out Screen
+image::mockups/mockup-endworkout.png[align="center"]

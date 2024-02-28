@@ -1,0 +1,20 @@
+[#Feedback,reftext=Feedback]
+
+=== Feedback Improvement
+
+=== Milestone 1
+- To improve section G.1, we added an extra sentence to give a brief overview of the importance and usefulness of the app.
+- To improve section G.4, we added a quantifiable metric to ensure our requirements are more easily verifiable.
+- To improve section G.7, we removed the IT department manager and replaced it with the administrative app manager for ACME Run, as they are directly involved in the application by dealing with events, releasing scores to community, etc.
+- To improve section P.6, we updated the first risk to mention local authorities rather than the government to better reflect the content included in other sections of the document.
+
+=== Milestone 2
+- To improve section G.5, we introduced an additional use case which involves the local authorites determining and updating safe areas. This helped us have more consistency in our document by referring back to the local authorities which were mentioned earlier in the document.
+- To improve section E.3, we replaced the mobile phone constraint with a more general device constraint, which states that the app must be compatible with several types of devices, which better captures the purpose of the system.
+- To improve section E.4, we redid the section to include two new assumptions and ensures to minimize overlap as much as possible, and to make assumptions that are important for the rest of the document.
+- To improve section E.2, we researched the mapping softwares and APIs that we could possibly used and speicified Google Maps platform API as the one that will be used to support the system's needs.
+- For section S.1, we were unsure of how exactly to fix the diagram based on the comments, as we cross-referenced the ATCO Eats example and found that the format was similar in this sense.
+- For section S.3, we looked over the section again and confirmed that the mockups were not cropped out in the document.
+- To improve section S.2, we corrected our misunderstanding and provided 2 NFRs for the entire system. Additionally, we changed the wording for some of the requirements to make them sound less subjective and easier to verify.
+- To improve section S.6, we added more quantification and how we would incorporate user interviews to improve the prototype.
+

@@ -1,0 +1,16 @@
+[discrete]
+=== Control Information
+
+.{project-title} -- Versionning Information -- Goal Book
+[cols="^1,^1,^2,^2,^2,^2"]
+|===
+|Section | Version | Lead | Delivered on| Reviewer | Approved on
+
+| **<<g1>>** | Milestone #1 | SZ | 01-10-2023 | JG | 01-10-2023
+| **<<g2>>** | Milestone #1 | SZ | 01-10-2023 | JG | 01-10-2023
+| **<<g3>>** | Milestone #1 | JG | 15-10-2023 | HR | 15-10-2023
+| **<<g4>>** | Milestone #1 | SZ | 09-10-2023 | JG | 11-10-2023
+| **<<g5>>** | Milestone #2 | HR | 11-11-2023 | SZ | 11-11-2023
+| **<<g6>>** | Milestone #2 | JG | 10-11-2023 | HR | 11-11-2023
+| **<<g7>>** | Milestone #1 | HR | 15-10-2023 | SZ | 15-10-2023
+|===

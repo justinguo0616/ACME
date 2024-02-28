@@ -1,0 +1,16 @@
+[#p1,reftext=P.1]
+=== (P.1) Roles and personnel
+
+ifdef::env-draft[]
+TIP: _Main responsibilities in the project; required project staff and their needed qualifications. It defines the roles (as a human responsibility) involved in the project._  <<BM22>>
+endif::[]
+
+- *Software Engineer:* Experience with building mobile applications, and experience working with mapping API's such as the Google Maps Platform API.
+
+- *Geographical Expert:* Familiarity with regions surrounding the McMaster region to help map trails and locate possible safe zones.
+
+- *Fitness Expert:* Experience in fitness planning to help in development of customized fitness plan software to integrate within the app.
+
+- *Security Expert:* Experience with application security to ensure application is safe from data breaches and security concerns 
+
+- *Product Manager:* Experience with managing product development to ensure product development is on track, as well as leading task on new application feature ideas.

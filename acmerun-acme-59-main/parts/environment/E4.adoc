@@ -1,0 +1,12 @@
+[#e4,reftext=E.4]
+=== (E.4) Assumptions
+
+ifdef::env-draft[]
+TIP: _Properties of the environment that may be assumed, with the goal of facilitating the project and simplifying the system. It defines properties that are not imposed by the environment (like those in <<e3>>) but assumed to hold, as an explicit decision meant to facilitate the system's construction._  <<BM22>>
+endif::[]
+
+
+- *Heart Rate Monitor support:* We assume that we will be able to use a standardized adapter which is compatible with all APIs for different Heart Rate Monitor manufacturers, allowing users to connect theirs to the app without the need for a specfific model.
+- *Specified Region Support:* We assume that we will have to support internet, data or gps platforms only in the supported area of the pilot app, and all users must grant location permissions to use the app.
+
+

@@ -1,0 +1,18 @@
+== Control Information
+
+[cols="^1,^2,^2,^2,^2"]
+|===
+.2+| *Version* 2+| *Delivery* 2+| *Feedback*
+| _Deadline_ | _Delivered_ | _Received_ | _Integrated_ 
+
+| **V1** | 15-10-2023 | 15-10-2023 | 28-10-2023 | 03-12-2023
+| **V2** | 12-11-2023 | 12-11-2023 | 12-11-2023 | 04-12-2023
+| **V3** | 06-12-2023 | 06-12-2023 | |
+|===
+
+[discrete]
+=== Disclaimer
+
+Some sections in this requirements document have taken inspiration from "ATCO Eats Requirements Standard Plan" [3]. There are sections which use similar formats and ideas as this document.
+
+[discrete]

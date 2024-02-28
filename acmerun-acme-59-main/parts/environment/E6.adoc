@@ -1,0 +1,12 @@
+[#e6,reftext=E.6]
+=== (E.6) Invariants
+
+ifdef::env-draft[]
+TIP: _Properties of the environment that the system's operation must preserve, i.e., properties of the environment that operations of the system may assume to hold when they start, and must maintain_  <<BM22>>
+endif::[]
+
+Some Invariants of this system can be defined as follows:
+
+* The ACME Run can assume trails available on the app will be curated by local authorities, ensuring the safety of the user while running on the trail. 
+
+* The ACME Run can assume that McMaster University will be responsible for their own version of the app MacRun, administrating safe trails and shelter locations.

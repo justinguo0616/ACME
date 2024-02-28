@@ -1,0 +1,144 @@
+[#s4,reftext=S.4]
+=== (S.4) Detailed usage scenarios
+
+ifdef::env-draft[]
+TIP: _Examples of interaction between the environment (or human users) and the system, expressed as user stories. Such scenarios are not by themselves a substitute for precise descriptions of functionality (<<s3>>), but provide an important complement by specifying cases that these behavior descriptions must support; they also serve as a basis for developing test cases. The scenarios most relevant for stakeholders are given in chapter <<g5>> in the Goals book, at a general level, as use cases; in contrast, <<s4>> can refer to system components and functionality (from other chapters of the System book) as well as special and erroneous cases, and introduce more specific scenarios._  <<BM22>>
+endif::[]
+
+==== (S.4.1) Connecting Heart Rate Monitor to the app
+
+* **Use Case**: <<uc1>>
+* **Primary Actor**: Students/faculty members at McMaster University
+* **Precondition**: Student/faculty member has the app downloaded and owns a compatible heart rate monitor
+* **Trigger**: Student/faculty member wants to integrate the heart rate mointor for more personalized workouts
+* **Main Success Scenario**
+
+    - 1. Student/faculty member opens the app on their phone.
+    - 2. Student/faculty member accesses the app settings section.
+    - 3. Student/faculty member selects the option to tell the app they want to initiate the pairing process.
+    - 4. Student/faculty member follows the app's instructions to link their heart rate monitor to their profile.
+    - 5. Student/faculty member calibrates the heart rate monitor to ensure proper functionality by following on-screen instructions.
+    - 6. Student/faculty member will recieve a notification that the pairing process was successful.
+
+* **Secondary Scenarios**
+
+    - 1.1. Student/faculty member creates a new account if they do not already have one.
+    - 4.1. Student/faculty member already has a heart rate monitor connected, but wants to switch to a new one.
+    - 6.1. Heart rate monitor was not properly set up, and the pairing process fails.
+    - 6.2. If the pairing is successful and it is the first time the user is connecting a heart rate monitor, the app will display the benefits gained.
+
+* **Success Postcondition**: Student/faculty member is able to participate in customized workouts based on their profile.
+
+This scenario is very important because it shows how users will be able to enhance their experience while using the app for workouts, as they will be able to gain a more personalized workout based on their fitness data. We can expect that this will motivate users to use the app more often and train towards their fitness goals.
+
+.Activity diagram for 'Connecting Heart Rate Monitor to the app'
+image::models/activity_HRM.png[scale=70%,align="center"]
+
+The above diagram helps visualize the differenct scenarios that are possible when a user wants to connect their compatible heart rate monitor to the app. It is helpful for visualizing the step-by-step process that a user has to follow during the scenario to reach the success postcondition.
+
+==== (S.4.2) Viewing user profile on the app
+
+* **Use Case**: <<uc2>>
+* **Primary Actor**: Students/faculty members at McMaster University
+* **Precondition**: Student/faculty member has the app downloaded and has already created an account
+* **Trigger**: Student/faculty member wants to view their badges and progress 
+* **Main Success Scenario**
+    
+    - 1. Student/faculty member opens the app on their phone.
+    - 2. Student/faculty member accesses the profile section.
+    - 3. App displays badges and general information about the user, such as fitness preferences.
+    - 4. Student/faculty member is able to choose which badges should be at the top of their profile.
+    - 5. Student/faculty member can modify their current fitness goals and personal information.
+    - 6. The app will notify the user that their changes have been saved.
+    - 7. Student/faculty member will be given the option to share their new profile with a popup screen.
+
+
+* **Secondary Scenarios**
+
+    - 4.1. Student/faculty member already has not yet earned any badges in the app.
+    - 6.1. There was an error when attempting to update the user's profile due to invalid input.
+
+* **Success Postcondition**: Student/faculty member was able to view the information they requested and successfully updated their profile.
+
+This scenario is important as it allows users to feel a sense of improvement and success when viewing their fitness progress and badges. It is also important since it allows users to update any information or preferences they have to optimize their experience while using the app during their workouts.
+
+
+==== (S.4.3) User begins workout on the app
+
+* **Use Case**: <<uc1>>, <<uc5>>
+* **Primary Actor**: Students/faculty members at McMaster University
+* **Precondition**: Student/faculty member has the app downloaded and is within the supported region
+* **Trigger**: Student/faculty member wants to start their workout while they are in the McMaster area
+* **Main Success Scenario**
+
+    - 1. Student/faculty member opens the app on their phone.
+    - 2. Student/faculty member selects the begin workout option.
+    - 3. Student/faculty member navigates to a safe supported area by following the app's directions.
+    - 4. App will present the user with several options to choose from to customize their workout.
+    - 5. Student/faculty member will choose from the on-screen options to match their preferences for the current workout.
+    - 6. App will implement the appropriate game logic based on the user's selections.
+    - 7. App will display final workout statistics when the user finishes the workout.
+
+* **Secondary Scenarios**
+
+    - 4.1. Student/faculty member wants a randomized workout experience, where the app automatically chooses the scenario on their behalf.
+    - 6.1. Student/faculty member enters an unsupported area. The workout is automatically paused.
+
+* **Success Postcondition**: Student/faculty member has completed their workout and is able to view their statistics, such as distance and calories burnt.
+
+This scenario is very important because it is the main purpose of the app for consumers. It allows them to workout and work towards their fitness goals any time they are in the supported region. This will allow them to feel fulfilled and motivated to continue to make progress through the app.
+
+.Activity diagram for 'User begins workout on the app'
+image::models/activity_workout.png[scale=70%,align="center"]
+
+Since this is the main goal of the app, this diagram is important for visualizing the process of doing a workout on the app and the options and scenarios that a user can take. It demonstrates the importance of safety and customizability for users.
+
+==== (S.4.4) App Manager finalizes global challenge event
+
+* **Use Case**: <<uc4>>
+* **Primary Actor**: ACME RUN 
+* **Precondition**: There is a global challenge event that is currently happening within the app
+* **Trigger**: The current global challenge event is close to expiring
+* **Main Success Scenario**
+
+    - 1. Users are actively participating in the event.
+    - 2. App notifies the app manager that the event is expiring.
+    - 3. App manager logs into the administrative portal.
+    - 4. App manager clicks on the event tab.
+    - 5. App manager selects option to compile event statistics and results.
+    - 6. App provides manager with an event summary.
+    - 7. App manager prompts the app to distribute badges when results have been verified.
+    - 8. App notifies users that event results and badges are released and viewable in the app.
+
+* **Secondary Scenarios**
+
+    - 1.1. App manager notices an issue with the results that have been provided. Results are not released until resolved.
+
+* **Success Postcondition**: All users who participated in the global challenge are able to view their results and have recieved the badges they earned.
+
+This scenario is important because the global challenge events are an important part of the app experience for users, so the manager will need to be able to have an easy way of viewing results. These results will be necessary for providing users with their statistics for the duration of the event and providing them with their earned badges, which represents their accomplishments.
+
+==== (S.4.5) Local authorities determining safe trails for users
+
+* **Use Case**: <<uc5>>
+* **Primary Actor**: Local authorities in the Hamilton region
+* **Precondition**: Local authorities are within the region and have access to safety reports
+* **Trigger**: ACME Run team reache out to authorities to determine which areas can be supported within the app
+* **Main Success Scenario**
+
+    - 1. ACME RUN team informs local authorities of what the boundaries of the supported region is.
+    - 2. Local authorities visit surrounding trails and area within the region.
+    - 3. Local authorities inspect the area.
+    - 4. Local authorities record their findings into a report which summarizes safety in the context of the use case of the app.
+    - 5. Local authorities provide the report to the ACME RUN team for implementation.
+    - 6. Local authorities coordinate a date for which the report of safe areas must be updated.
+
+* **Secondary Scenarios**
+
+    - 6.1. Local authorities determine that there is no need for an update in the given area. No changes are made.
+
+* **Success Postcondition**: ACME RUN team is now aware of which areas they can have support for in the app during workouts.
+
+This scenario is critical because the safety of users is always a priority. By working with local authorities to determine safe areas, there can be a sense of safety in the implementation of game logic. We can expect that users will have a much smoother experience with workouts using the app knowing they are in an approved area.
+
+

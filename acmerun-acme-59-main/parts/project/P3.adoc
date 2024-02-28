@@ -1,0 +1,36 @@
+[#p3,reftext=P.3]
+=== (P.3) Schedule and milestones
+
+ifdef::env-draft[]
+TIP: _List of tasks to be carried out and their scheduling. It defines the project's key dates._  <<BM22>>
+endif::[]
+
+
+*Sprint 1 (January 2024):*
+    
+-Mapping API Integration: Set up and integrate the Google Maps Platform API into the application.
+
+-Live User Location and Tracking: Ability to connect users live location to Google Maps APIs and track data.
+
+-Introduce Basic Game Logic: Enemies chasing user through their workout
+
+*Sprint 2 (February 2024):*
+
+-Introduce Advanced Game Logic System: Add virtual enemies for user to fight during workout alongside the defensive fight back options (push-ups, etc.), alongside shelter for rest zones.
+
+-User Profiles Manager: Implement profile service where user can create and update their profiles, allowing for past workouts to be saved
+
+*Sprint 3 (March 2024):*
+
+-Advanced Workout Logic: Add customized training plans tailored based on past workouts, and integration with HRM to allow for further user data for training plans.
+
+*Sprint 4 (April 2024):*
+
+-Global Connectivity: Create connectivity amongs players to allow players to compete against each others statistics and fight for the top stop on the leaderboard.
+
+-Global Event Manager: Create seasonal events allowing players to compete against each other and earn badges to contribute to their user profile.
+
+
+*MVP Justification:* The first sprint of our development produces a minimal viable product that provides the mimum feature set that allows for core functionality.
+Within a month we are able to set up the core systems of the app through the mapping API alongside user tracking. These core requirements paired with basic game logic fulfills the target basic functionality of an interactive workout app.
+It also allows the development to collect feedback on the logistics of the core functionality and how the map and live location features interact with the system.
